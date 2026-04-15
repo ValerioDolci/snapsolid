@@ -1,0 +1,44 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+dist/
+build/
+.venv/
+venv/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# 3D files (large)
+*.stl
+*.usdz
+*.obj
+*.ply
+*.3mf
+*.hdr
+*.exr
+
+# Pipeline output
+output/
+samples/
+test_fix*/
+test_output_*/
+test_e2e_*/
+test_crop/
+*.log
+
+# Swift build artifacts
+tools/photogrammetry-cli/.build/
+
+# Secrets
+.env
+*.pem
