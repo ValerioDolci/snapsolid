@@ -1,0 +1,51 @@
+[project]
+name = "snapsolid"
+version = "0.1.0"
+description = "Photogrammetry to 3D-printable STL pipeline"
+requires-python = ">=3.10"
+license = {text = "GPL-3.0-or-later"}
+authors = [
+    {name = "Valerio Casini"},
+]
+keywords = ["photogrammetry", "3d-printing", "stl", "mesh-repair", "apple-object-capture"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
+    "Operating System :: MacOS",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
+    "Topic :: Scientific/Engineering :: Image Processing",
+]
+dependencies = [
+    "pymeshlab>=2023.12",
+    "trimesh>=4.0",
+    "numpy>=1.24",
+    "pyyaml>=6.0",
+    "opencv-python>=4.8",
+    "pillow>=10.0",
+    "scipy>=1.11",
+    "matplotlib>=3.7",
+    "networkx>=3.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0",
+]
+
+[project.scripts]
+snapsolid = "snapsolid.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/valeriocast/snapsolid"
+Repository = "https://github.com/valeriocast/snapsolid"
+Issues = "https://github.com/valeriocast/snapsolid/issues"
+
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.build_meta"
