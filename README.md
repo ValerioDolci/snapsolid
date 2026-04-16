@@ -2,6 +2,12 @@
 
 **Photogrammetry to 3D-printable STL pipeline.**
 
+<p align="center">
+  <img src="docs/images/preview_top.jpg" width="48%" alt="Top view in PrusaSlicer"/>
+  <img src="docs/images/preview_side.jpg" width="48%" alt="Side view in PrusaSlicer"/>
+</p>
+<p align="center"><em>330 drone photos → printable STL, ready for slicing</em></p>
+
 Snapsolid bridges the gap between drone photogrammetry and 3D printing. It takes a folder of photos and produces a watertight, print-ready STL file — handling photo quality filtering, 3D reconstruction, mesh cleaning and topological repair, and export in a single automated pipeline.
 
 ### Why Snapsolid?
